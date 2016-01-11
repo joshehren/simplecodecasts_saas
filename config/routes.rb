@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'users/registrations' }
+  #unnecessary change
   resources :contacts
   get '/about' => 'pages#about'
   root 'pages#home'
